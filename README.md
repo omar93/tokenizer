@@ -12,6 +12,7 @@ Example:
 <code>
 import Tokenizer from 'tokenizer-1dv610'
 </code>
+
 <code>
 let tokenizer = new Tokenizer('testString.', {'wordAndDotGrammar',regex:[{'regex':/^[\A-Za-z|åäöÅÄÖ]+/g,'type':'word'},{'regex':/^\./g,'type':'dot'}]})
 </code>
