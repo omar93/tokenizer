@@ -7,5 +7,5 @@ is an object with the key 'name' & the key 'regex' that is an array of objects w
 Example: 
 
 <code>
-let tokenizer = new Tokenizer('the string you want to tokenize', {'grammarname',regex:[{}]})
+let tokenizer = new Tokenizer('testString.', {'wordAndDotGrammar',regex:[{'regex':/^[\A-Za-z|åäöÅÄÖ]+/g,'type':'word'},{'regex':/^\./g,'type':'dot'}]})
 </code>
