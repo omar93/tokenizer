@@ -27,3 +27,8 @@ To step to the previous token use:
 tokenizer.previous()
 </code>
 
+To change the string use:
+<code>
+tokenizer.setString('new string')
+</code>
+
