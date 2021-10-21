@@ -10,11 +10,16 @@ is an object with the key 'name' and value:String & the key 'regex' with the val
 Example: 
 
 <code>
-import Tokenizer from 'tokenizer-1dv610'
+import { Tokenizer, Grammar } from 'tokenizer-1dv610'
 </code>
 <br />
 <code>
-let tokenizer = new Tokenizer('testString.', {'grammar':'wordAndDotGrammar','regex':[{'regex':/^[\A-Za-z|åäöÅÄÖ]+/g,'type':'word'},{'regex':/^\./g,'type':'dot'}]})
+let wordAndDotGrammar = new Grammar()
+wordAndDotGrammar.addGrammar({'regex':/^[\A-Za-z|åäöÅÄÖ]+/g,'type':'word'})
+wordAndDotGrammar.addGrammar({'regex':/^\./g,'type':'dot', 'sentenceEnding':'normal sentence'})
+wordAndDotGrammar.addGrammar({'regex':/^\?/g,'type':'question mark', 'sentenceEnding':'question'})
+wordAndDotGrammar.addGrammar({'regex':/^\!/g,'type':'exclamation mark', 'sentenceEnding':'announcement'})
+let tokenizer = new Tokenizer('Hello this is a sentence.',wordAndDotGrammar)
 </code>
 
 
