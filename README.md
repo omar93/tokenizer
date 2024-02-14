@@ -1,6 +1,6 @@
 
 # tokenizer
-A tokenizer for the course 1dv610
+A tokenizer that can be installed with: npm i tokenizer-1dv610
 visit the github repo for more info if this page is not up to date
 
 # How to use
