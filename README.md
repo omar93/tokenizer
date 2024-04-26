@@ -3,6 +3,9 @@
 A tokenizer that can be installed with: npm i tokenizer-1dv610
 visit the github repo for more info if this page is not up to date
 
+# Installation
+<code>npm i tokenizer-1dv610</code>
+
 # How to use
 npm i tokenizer-1dv610
 
